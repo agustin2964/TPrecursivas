@@ -166,7 +166,10 @@ def punto_18(matriz,flag=0):
             print(matriz[i])
 
 def punto_19(n):
-    pass
+    if n==1:
+        return 1
+    else:
+        return n+(1/(punto_19(n-1)))**2
 
 def punto_20(lista,buscado,n=0):
     if lista[n]==buscado:
